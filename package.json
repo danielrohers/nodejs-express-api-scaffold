@@ -1,7 +1,7 @@
 {
   "name": "nodejs-express-api-scaffold",
+  "description": "API application featuring Node.js, Express and MongoDB",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
     "start": "node ./bin/www",
     "doc": "./bin/doc"
@@ -19,5 +19,13 @@
   },
   "devDependencies": {
     "apidoc": "^0.14.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielrohers/nodejs-express-api-scaffold.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielrohers/nodejs-express-api-scaffold/issues"
+  },
+  "license": "MIT"
 }
