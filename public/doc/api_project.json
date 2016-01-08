@@ -1,0 +1,1 @@
+{  "name": "nodejs-express-api-scaffold",  "version": "0.0.1",  "description": "",  "title": "api documentation",  "sampleUrl": false,  "apidoc": "0.2.0",  "generator": {    "name": "apidoc",    "time": "2016-01-08T13:24:01.105Z",    "url": "http://apidocjs.com",    "version": "0.14.0"  }}
