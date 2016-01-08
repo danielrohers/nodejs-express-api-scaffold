@@ -27,11 +27,6 @@ First start MongoDB if you don't have a running instance
 
 [Running Example](https://nodejs-express-api-scaffold.herokuapp.com/doc)
 
-## TODO
-
-* User/Role management
-* More tests
-
 ## License
 
 [Licence](https://github.com/danielrohers/nodejs-express-api-scaffold/blob/master/LICENSE)
