@@ -1,50 +1,46 @@
-'use strict';
+const serveStatic = require('serve-static');
+const path = require('path');
 
-module.exports = app => {
+const getRoute = module => require(`../app/routes/${module}`);
 
-    /* ===== PUBLIC FILES ===== */
+module.exports = (app) => {
+  // PUBLIC FILES
 
-    const serveStatic = require('serve-static');
-    const path = require('path');
+  app.use(serveStatic(path.join(__dirname, '../public')));
 
-    app.use(serveStatic(path.join(__dirname, '../public')));
+  // ROUTES
 
-    /* ===== ROUTES ===== */
-
-    const foo = require('../app/routes/foo');
-
-    app.use('/api/foo', foo);
+  app.use('/api/foo', getRoute('foo'));
 
 
-    /* ===== ERROR HANDLERS ===== */
+  // ERROR HANDLERS
 
-    // catch 404 and forward to error handler
-    app.use((req, res, next) => {
-        let err = new Error('Not Found');
-        err.status = 404;
-        next(err);
+  // catch 404 and forward to error handler
+  app.use((req, res, next) => {
+    const err = new Error('Not Found');
+    err.status = 404;
+    next(err);
+  });
+
+  // development error handler
+  // will print stacktrace
+  if (app.get('env') === 'development') {
+    app.use((err, req, res) => {
+      res.status(err.status || 500);
+      res.json({
+        message: err.message,
+        error: err,
+      });
     });
+  }
 
-    // development error handler
-    // will print stacktrace
-    if (app.get('env') === 'development') {
-        app.use((err, req, res, next) => {
-            res.status(err.status || 500);
-            res.json({
-                message: err.message,
-                error: err
-            });
-        });
-    }
-
-    // production error handler
-    // no stacktraces leaked to user
-    app.use((err, req, res, next) => {
-        res.status(err.status || 500);
-        res.json({
-            message: err.message,
-            error: {}
-        });
+  // production error handler
+  // no stacktraces leaked to user
+  app.use((err, req, res) => {
+    res.status(err.status || 500);
+    res.json({
+      message: err.message,
+      error: {},
     });
-
-}
+  });
+};

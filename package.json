@@ -4,21 +4,29 @@
   "version": "0.0.1",
   "scripts": {
     "start": "node ./bin/www",
-    "doc": "./bin/doc"
+    "doc": "./bin/doc",
+    "nodemon": "nodemon"
   },
   "dependencies": {
-    "body-parser": "~1.13.2",
-    "express": "~4.13.1",
+    "body-parser": "~1.15.2",
+    "express": "~4.14.0",
+    "lodash": "^4.16.2",
     "mongoose": "^4.3.4",
-    "morgan": "~1.6.1",
+    "morgan": "~1.7.0",
     "serve-static": "^1.10.0",
-    "web-crud": "0.0.6"
+    "winston": "^2.2.0"
   },
   "engines": {
     "node": ">=4.0.0"
   },
   "devDependencies": {
-    "apidoc": "^0.14.0"
+    "apidoc": "^0.16.1",
+    "eslint": "^3.7.0",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^2.0.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.3.0",
+    "nodemon": "^1.10.2"
   },
   "repository": {
     "type": "git",
