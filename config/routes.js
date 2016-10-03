@@ -16,31 +16,14 @@ module.exports = (app) => {
   // ERROR HANDLERS
 
   // catch 404 and forward to error handler
-  app.use((req, res, next) => {
-    const err = new Error('Not Found');
-    err.status = 404;
-    next(err);
+  app.use((req, res) => {
+    res.status(404).json({ message: 'Not found' });
   });
 
-  // development error handler
-  // will print stacktrace
-  if (app.get('env') === 'development') {
-    app.use((err, req, res) => {
-      res.status(err.status || 500);
-      res.json({
-        message: err.message,
-        error: err,
-      });
-    });
-  }
-
-  // production error handler
-  // no stacktraces leaked to user
+  // error handler
   app.use((err, req, res) => {
-    res.status(err.status || 500);
-    res.json({
-      message: err.message,
-      error: {},
-    });
+    const message = err.message;
+    const error = app.get('env') === 'development' ? err : {};
+    res.status(err.status || 500).json({ message, error });
   });
 };
