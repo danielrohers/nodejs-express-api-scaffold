@@ -8,22 +8,36 @@
 
 > [Install Node.js](https://nodejs.org/en/download)
 
-> [sudo] npm install
+```bash
+[sudo] npm install
+```
 
 
 ## Launching
 
 First start MongoDB if you don't have a running instance
 
-> mongod
+```bash
+mongod
+```
 
 #### Development
 
-> npm start
+```bash
+npm start
+```
+
+or use [nodemon](https://www.npmjs.com/package/nodemon)
+
+```bash
+npm run nodemon
+```
 
 #### Production
 
-> node bin/www
+```bash
+node bin/www
+```
 
 [Running Example](https://nodejs-express-api-scaffold.herokuapp.com/doc)
 
