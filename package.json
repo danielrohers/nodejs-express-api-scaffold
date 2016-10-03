@@ -10,6 +10,7 @@
   "dependencies": {
     "body-parser": "~1.15.2",
     "express": "~4.14.0",
+    "helmet": "^2.3.0",
     "lodash": "^4.16.2",
     "mongoose": "^4.3.4",
     "morgan": "~1.7.0",
@@ -17,7 +18,7 @@
     "winston": "^2.2.0"
   },
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=6.0.0"
   },
   "devDependencies": {
     "apidoc": "^0.16.1",
