@@ -7,7 +7,7 @@ router
   .route('/')
 
   /**
-  * @api {get} /api/foo List
+  * @api {get} /foo List
   * @apiGroup Foo
   *
   * @apiSuccess {Boolean=true} success
@@ -16,13 +16,13 @@ router
   .get(controller.list)
 
   /**
-  * @api {post} /api/foo Create
+  * @api {post} /foo Create
   * @apiGroup Foo
   *
   * @apiParam {String} name
   * @apiParam {String} last_name
   *
-  * @apiSuccess {Boolean=true} success
+  * @apiSuccess {Boolean} success=true
   * @apiSuccess {Foo} data
   */
   .post(controller.create);
@@ -31,30 +31,30 @@ router
   .route('/:id')
 
   /**
-  * @api {get} /api/foo/:id Find
+  * @api {get} /foo/:id Find
   * @apiGroup Foo
   *
-  * @apiSuccess {Boolean=true} success
+  * @apiSuccess {Boolean} success=true
   * @apiSuccess {Foo} data
   */
   .get(controller.findById)
 
   /**
-  * @api {put} /api/foo/:id Update
+  * @api {put} /foo/:id Update
   * @apiGroup Foo
   *
   * @apiParam {String} name
   * @apiParam {String} last_name
   *
-  * @apiSuccess {Boolean=true} success
+  * @apiSuccess {Boolean} success=true
   */
   .put(controller.update)
 
   /**
-  * @api {put} /api/foo/:id Delete
+  * @api {put} /foo/:id Delete
   * @apiGroup Foo
   *
-  * @apiSuccess {Boolean=true} success
+  * @apiSuccess {Boolean} success=true
   */
   .delete(controller.delete);
 
