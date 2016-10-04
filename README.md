@@ -1,5 +1,6 @@
 # Node.js Express API Scaffold
 
+[![Build Status](https://travis-ci.org/danielrohers/nodejs-express-api-scaffold.svg?branch=master)](https://travis-ci.org/danielrohers/nodejs-express-api-scaffold)
 [![Code Climate](https://codeclimate.com/repos/57f3a077c1383b358c003297/badges/72be492735c7a9488e2b/gpa.svg)](https://codeclimate.com/repos/57f3a077c1383b358c003297/feed)
 [![Dependency Status](https://david-dm.org/danielrohers/nodejs-express-api-scaffold.svg)](https://david-dm.org/danielrohers/nodejs-express-api-scaffold)
 [![devDependency Status](https://david-dm.org/danielrohers/nodejs-express-api-scaffold/dev-status.svg)](https://david-dm.org/danielrohers/nodejs-express-api-scaffold#info=devDependencies)
