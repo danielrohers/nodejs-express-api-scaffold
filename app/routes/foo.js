@@ -51,7 +51,7 @@ router
   .put(controller.update)
 
   /**
-  * @api {put} /foo/:id Delete
+  * @api {delete} /foo/:id Delete
   * @apiGroup Foo
   *
   * @apiSuccess {Boolean} success=true
