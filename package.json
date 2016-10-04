@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "doc": "./bin/doc",
-    "nodemon": "nodemon"
+    "nodemon": "nodemon",
+    "eslint": "eslint *.js"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
