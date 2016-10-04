@@ -10,7 +10,7 @@ router
   * @api {get} /foo List
   * @apiGroup Foo
   *
-  * @apiSuccess {Boolean=true} success
+  * @apiSuccess {Boolean} success=true
   * @apiSuccess {Foo[]} data
   */
   .get(controller.list)
