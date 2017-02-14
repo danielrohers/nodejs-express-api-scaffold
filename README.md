@@ -6,13 +6,13 @@
 [![devDependency Status](https://david-dm.org/danielrohers/nodejs-express-api-scaffold/dev-status.svg)](https://david-dm.org/danielrohers/nodejs-express-api-scaffold#info=devDependencies)
 ## Setup
 
-### Requirements
+**Requirements**
 
 > [Install MongoDB](https://www.mongodb.org/downloads)
 
 > [Install Node.js](https://nodejs.org/en/download)
 
-### Install dependencies
+**Install dependencies**
 ```bash
 $ [sudo] npm install
 ```
@@ -28,7 +28,7 @@ First start MongoDB if you don't have a running instance
 $ mongod
 ```
 
-#### Development
+**Development**
 ```bash
 $ npm start
 ```
@@ -37,18 +37,13 @@ or use [nodemon](https://www.npmjs.com/package/nodemon)
 $ npm run nodemon
 ```
 
-#### Production
+**Production**
 ```bash
 $ node bin/www
 ```
 
 [Running Example](https://nodejs-express-api-scaffold.herokuapp.com)
 
-## TODO
-
-* Authentication
-* [ACL](https://en.wikipedia.org/wiki/Access_control_list)
-
 ## License
 
-[Licence](https://github.com/danielrohers/nodejs-express-api-scaffold/blob/master/LICENSE)
+[Licence](LICENSE)
