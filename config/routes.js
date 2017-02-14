@@ -1,5 +1,6 @@
 const serveStatic = require('serve-static');
 const path = require('path');
+const query = require('../app/middlewares/query');
 
 const getRoute = module => require(`../app/routes/${module}`);
 
@@ -7,6 +8,10 @@ module.exports = (app) => {
   // PUBLIC FILES
 
   app.use('/', serveStatic(path.join(__dirname, '../apidoc')));
+
+  // MIDDLEWARES
+
+  app.use(query);
 
   // ROUTES
 
