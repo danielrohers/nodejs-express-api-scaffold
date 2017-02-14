@@ -20,7 +20,6 @@ router
   * @apiGroup Foo
   *
   * @apiParam {String} name
-  * @apiParam {String} last_name
   *
   * @apiSuccess {Boolean} success=true
   * @apiSuccess {Foo} data
@@ -44,7 +43,6 @@ router
   * @apiGroup Foo
   *
   * @apiParam {String} name
-  * @apiParam {String} last_name
   *
   * @apiSuccess {Boolean} success=true
   */
