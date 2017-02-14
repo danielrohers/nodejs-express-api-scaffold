@@ -43,7 +43,7 @@ npm run nodemon
 node bin/www
 ```
 
-[Running Example](https://nodejs-express-api-scaffold.herokuapp.com/doc)
+[Running Example](https://nodejs-express-api-scaffold.herokuapp.com)
 
 ## TODO
 

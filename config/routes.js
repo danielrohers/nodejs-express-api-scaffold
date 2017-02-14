@@ -6,7 +6,7 @@ const getRoute = module => require(`../app/routes/${module}`);
 module.exports = (app) => {
   // PUBLIC FILES
 
-  app.use(serveStatic(path.join(__dirname, '../public')));
+  app.use('/', serveStatic(path.join(__dirname, '../apidoc')));
 
   // ROUTES
 
