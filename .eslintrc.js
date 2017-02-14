@@ -1,9 +1,5 @@
 module.exports = {
-  "extends": "airbnb",
-  "env": {
-    "es6": true,
-    "node": true
-  },
+  "extends": "airbnb-base",
   "rules": {
     "new-cap": "off",
     "global-require": "off",
@@ -11,8 +7,6 @@ module.exports = {
     "consistent-return": "off"
   },
   "plugins": [
-    "react",
-    "jsx-a11y",
     "import"
   ]
 };
