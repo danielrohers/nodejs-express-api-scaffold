@@ -8,9 +8,9 @@
 
 **Requirements**
 
-> [Install MongoDB](https://www.mongodb.org/downloads)
+> [MongoDB](https://www.mongodb.org)
 
-> [Install Node.js](https://nodejs.org/en/download)
+> [Node.js](https://nodejs.org)
 
 **Install dependencies**
 ```bash
