@@ -12,4 +12,4 @@ ratings:
   paths:
   - "**.js"
 exclude_paths:
-- public/**/*
+- apidoc
