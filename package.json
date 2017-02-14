@@ -22,7 +22,7 @@
     "node": ">=5.0.0"
   },
   "devDependencies": {
-    "apidoc": "^0.16.1",
+    "apidoc": "^0.17.5",
     "eslint": "^3.15.0",
     "eslint-config-airbnb-base": "^11.1.0",
     "eslint-plugin-import": "^2.2.0",
