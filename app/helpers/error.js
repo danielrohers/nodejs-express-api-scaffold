@@ -7,17 +7,21 @@ const _ = require('lodash');
 module.exports = {
 
   response: (res, err) => {
-    if (err.status) return res.status(err.status).json({ success: false, message: err.message });
+    let { status } = err;
 
     if (err.name === 'ValidationError') {
+      status = 400;
       const errors = _.map(err.errors, 'message');
-      log.error('Internal error (400): ', errors);
-      return res.status(400).json({ success: false, message: errors });
+      log.error(`Internal error (${status}): ${errors}`);
+      return res.status(status).json({ success: false, message: errors, status });
     }
 
+    if (status) return res.status(status).json({ success: false, message: err.message, status });
+
+    status = 500;
     const message = err.message;
-    log.error('Internal error (500): ', message);
-    res.status(500).json({ success: false, message });
+    log.error(`Internal error (${status}): ${message}`);
+    res.status(status).json({ success: false, message, status });
   },
 
 };
