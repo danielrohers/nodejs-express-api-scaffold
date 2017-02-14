@@ -34,7 +34,7 @@ $ npm start
 ```
 or use [nodemon](https://www.npmjs.com/package/nodemon)
 ```bash
-$ npm run nodemon
+$ npm run dev
 ```
 
 **Production**
