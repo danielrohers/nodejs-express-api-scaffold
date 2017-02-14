@@ -9,7 +9,7 @@
     "eslint": "eslint *.js"
   },
   "dependencies": {
-    "body-parser": "~1.15.2",
+    "body-parser": "^1.16.1",
     "express": "~4.14.0",
     "helmet": "^2.3.0",
     "lodash": "^4.16.2",
