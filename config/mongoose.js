@@ -1,11 +1,12 @@
 const log = require('winston');
 const mongoose = require('mongoose');
+const env = require('./env');
 
-const CONN_STR = process.env.DATABASE_URL || 'mongodb://localhost:27017/nodejs-express-api-scaffold';
+const CONN_STR = env.mongodb;
 
 mongoose.Promise = global.Promise;
 
-mongoose.set('debug', process.env.NODE_ENV === 'development');
+mongoose.set('debug', env.node_env === 'development');
 
 mongoose.connect(CONN_STR);
 
